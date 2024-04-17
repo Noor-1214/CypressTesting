@@ -1,5 +1,5 @@
 describe('Test Automation Practice Blog Tests', () => {
-    before(() => {
+    beforeEach(() => {
       // Visit the website
       cy.visit('https://testautomationpractice.blogspot.com/');
     });
@@ -12,7 +12,6 @@ describe('Test Automation Practice Blog Tests', () => {
     });
   
     it('Should verify the presence of a specific element', () => {
-        cy.visit('https://testautomationpractice.blogspot.com/');
         cy.wait(2000);
 
       // Test to verify the presence of a specific element on the page
