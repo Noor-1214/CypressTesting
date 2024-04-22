@@ -30,3 +30,7 @@ import 'cypress-file-upload';
 /// <reference types='Cypress'/>
 
 
+// Custom commands for clicking on links using labels 
+Cypress.Commands.add('ClickLink',(label)=>{
+    cy.get('a').contains(label).click();
+})
